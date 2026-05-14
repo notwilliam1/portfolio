@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William Causey — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- add fav -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- nav -->
+  <nav id="main-nav">
+    <a href="#top" class="nav-name">William Causey</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- hero -->
+  <div id="top" class="container">
+    <div class="hero">
+      <div class="hero-eyebrow" id="he">Junior · Kennesaw State University</div>
+      <h1 class="hero-name" id="hn">William<br>Causey</h1>
+      <p class="hero-sub" id="hs">Software Engineering student. I build reliable systems — serverless cloud infrastructure, real-time interfaces, and low-level tools.</p>
+      <div class="hero-ctas" id="hc">
+        <a href="#projects" class="btn btn-dark">View Projects</a>
+        <a href="resume.pdf" download class="btn btn-outline">Résumé ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- proj -->
+  <div class="container">
+    <section id="projects">
+      <div class="sec-hd fade">
+        <span class="sec-num">001</span>
+        <h2 class="sec-title">Projects</h2>
+      </div>
+
+      <div class="project fade d1">
+        <span class="p-num">01</span>
+        <div>
+          <h3 class="p-name">RAG Pipeline</h3>
+          <p class="p-desc">Multi-tenant SaaS for semantic document Q&amp;A. Upload PDFs, ask questions in natural language, get accurate answers backed by vector embeddings and streaming LLM responses.</p>
+          <ul class="p-bullets">
+            <li>Token-based auth with per-user data isolation across S3, DynamoDB, and Pinecone vector metadata</li>
+            <li>Serverless security: IAM least-privilege policies, user-scoped rate limiting, and environment-based secret management</li>
+            <li>Real-time streaming UI with drag-and-drop uploads, deployed on Vercel with CI/CD via GitHub</li>
+          </ul>
+          <div class="p-stack">
+            <span class="chip">AWS Lambda</span>
+            <span class="chip">S3 · DynamoDB</span>
+            <span class="chip">OpenAI</span>
+            <span class="chip">Pinecone</span>
+            <span class="chip">Supabase Auth</span>
+            <span class="chip">Vite</span>
+            <span class="chip">Vercel</span>
+          </div>
+        </div>
+        <div class="p-links">
+          <a href="https://rag-pipeline-frontend.vercel.app/" target="_blank" class="p-link">Live Demo ↗</a>
+        </div>
+      </div>
+
+      <div class="project fade d2">
+        <span class="p-num">02</span>
+        <div>
+          <h3 class="p-name">Terminal Dashboard</h3>
+          <p class="p-desc">Real-time system monitor for Windows written in C++. Tracks CPU, memory, and disk with &lt;50ms latency, plus async geolocation and weather.</p>
+          <ul class="p-bullets">
+            <li>Multi-threaded architecture with mutex-based shared state synchronization</li>
+            <li>Async API calls via libcurl for external data without UI stall</li>
+            <li>Automated builds and unit tests with GitHub Actions CI/CD</li>
+          </ul>
+          <div class="p-stack">
+            <span class="chip">C++</span>
+            <span class="chip">Win32 API</span>
+            <span class="chip">libcurl</span>
+            <span class="chip">Multithreading</span>
+            <span class="chip">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="p-links">
+          <a href="https://github.com/notwilliam1/TerminalDashboard" target="_blank" class="p-link">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project fade d3">
+        <span class="p-num">03</span>
+        <div>
+          <h3 class="p-name">Draft Bot</h3>
+          <p class="p-desc">Async Discord bot for competitive gaming matchmaking. Handles concurrent multi-user draft sessions with clean OOP-structured player state, draft logic, and match workflows.</p>
+          <ul class="p-bullets">
+            <li>Event-driven design with Discord.py and Python Asyncio for concurrent session handling</li>
+            <li>Structured player and match state management with clear separation of concerns</li>
+          </ul>
+          <div class="p-stack">
+            <span class="chip">Python</span>
+            <span class="chip">Discord.py</span>
+            <span class="chip">Asyncio</span>
+          </div>
+        </div>
+        <div class="p-links">
+          <a href="https://github.com/notwilliam1/8s-draft-discord-bot" target="_blank" class="p-link">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills">
+      <div class="sec-hd fade">
+        <span class="sec-num">002</span>
+        <h2 class="sec-title">Skills</h2>
+      </div>
+      <div class="skills-grid fade d1">
+        <div>
+          <div class="sg-label">Languages</div>
+          <div class="sg-chips">
+            <span class="sk-chip">Python</span>
+            <span class="sk-chip">Java</span>
+            <span class="sk-chip">JavaScript</span>
+            <span class="sk-chip">SQL</span>
+          </div>
+        </div>
+        <div>
+          <div class="sg-label">Cloud &amp; Infra</div>
+          <div class="sg-chips">
+            <span class="sk-chip">AWS</span>
+            <span class="sk-chip">Linux</span>
+            <span class="sk-chip">Git</span>
+            <span class="sk-chip">Pinecone</span>
+            <span class="sk-chip">Vercel</span>
+            <span class="sk-chip">Supabase</span>
+          </div>
+        </div>
+        <div>
+          <div class="sg-label">Frameworks &amp; Tools</div>
+          <div class="sg-chips">
+            <span class="sk-chip">Node.js</span>
+            <span class="sk-chip">GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- edu -->
+    <section id="education">
+      <div class="sec-hd fade">
+        <span class="sec-num">003</span>
+        <h2 class="sec-title">Education</h2>
+      </div>
+      <div class="edu-row fade d1">
+        <div>
+          <div class="edu-school">Kennesaw State University</div>
+          <div class="edu-degree">B.S. Software Engineering</div>
+          <div class="cw-label">Relevant Coursework</div>
+          <div class="cw-chips">
+            <span class="cw-chip">Data Structures and Algorithms</span>
+            <span class="cw-chip">Operating Systems</span>
+            <span class="cw-chip">Database Systems</span>
+            <span class="cw-chip">Discrete Structures</span>
+            <span class="cw-chip">Computer Organization and Architecture</span>
+          </div>
+        </div>
+        <div class="edu-meta">
+          <div class="edu-status">Junior</div>
+          <div class="edu-year">Expected 2028</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- contact -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="fade">
+        <div class="footer-hl">Let's connect.</div>
+        <div class="footer-links">
+          <a href="mailto:causeywilliam0@gmail.com" class="f-link">causeywilliam0@gmail.com ↗</a>
+          <a href="https://www.linkedin.com/in/causeywilliam" target="_blank" class="f-link">LinkedIn ↗</a>
+          <a href="https://github.com/notwilliam1" target="_blank" class="f-link">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="footer-right fade d1">
+        <div class="footer-sig">William Causey</div>
+        <div class="footer-copy">© 2026</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(gunzip)",
+      "Bash(zcat \"/Users/willcausey/.claude/projects/-Users-willcausey-Documents-repos-portfolio/6bd311e9-aed5-45ad-950e-0a48747dcb46/tool-results/webfetch-1778734704220-1v18fk.bin\")"
+    ]
+  }
+}
